@@ -22,14 +22,14 @@ Simple HelloWorld Java application using Maven
  
  Clean
  
- ```
+ ```sh
  cd HelloWorldJava
  mvn clean
  ```
  
 Compile
  
- ```
+ ```sh
  cd HelloWorldJava
  mvn compile
  cd target/classes
@@ -38,7 +38,7 @@ Compile
  
 Package
  
- ```
+ ```sh
  cd HelloWorldJava
  mvn package
  cd target
