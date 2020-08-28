@@ -17,6 +17,7 @@ Simple HelloWorld Java application using Maven
  - copy to desired installation directory C:\maven
  - Setup JAVA_HOME
  - Setup MAVEN_HOME
+ - Add bin to Path env variable
  
  ## Maven
  
