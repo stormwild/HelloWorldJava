@@ -9,7 +9,7 @@ Simple HelloWorld Java application using Maven
  
  ## Tools
  
- [Sprint Tool Suite 4](https://spring.io/tools)
+ [Spring Tools 4 for Eclipse](https://spring.io/tools)
  
  ### Setup
  
