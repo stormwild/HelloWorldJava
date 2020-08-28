@@ -2,6 +2,8 @@
 
 Simple HelloWorld Java application using Maven
 
+[Maven Fundamentals](https://app.pluralsight.com/library/courses/maven-fundamentals/)
+
  ## Pre-requisites
  
  - Java JDK (14)
