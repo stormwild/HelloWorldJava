@@ -77,7 +77,7 @@ Configure UTF-8 encoding for all content types in Eclipse (Spring Tools 4):
   >
   > #&nbsp;.project
  
-- [Maven .gitingore](https://raw.githubusercontent.com/github/gitignore/master/Maven.gitignore)
+- [Maven .gitignore](https://raw.githubusercontent.com/github/gitignore/master/Maven.gitignore)
 
  
  
