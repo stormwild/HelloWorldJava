@@ -71,9 +71,9 @@ Configure UTF-8 encoding for all content types in Eclipse (Spring Tools 4):
 
   Uncomment `.project` 
   
-  > # Uncomment this line if you wish to ignore the project description file.
-  > # Typically, this file would be tracked if it contains build/dependency configurations:
-  > #.project
+  > \# Uncomment this line if you wish to ignore the project description file.
+  > \# Typically, this file would be tracked if it contains build/dependency configurations:
+  > \# .project
  
 - [Maven .gitingore](https://raw.githubusercontent.com/github/gitignore/master/Maven.gitignore)
 
