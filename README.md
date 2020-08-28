@@ -29,6 +29,46 @@ Simple HelloWorld Java application using Maven
  
 Compile
  
+Maven Compiler Configuration
+ 
+[Setting the -source and -target of the Java Compiler](https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)
+
+```xml
+<project>
+	<groupId>com.pluralsight</groupId>
+	<artifactId>HelloWorld</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.java.version>1.7</project.java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>${project.java.version}</source>
+					<target>${project.java.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+```
+
+> Note: Merely setting the target option does not guarantee that your code actually runs on a JRE with the specified version. The pitfall is unintended usage of APIs that only exist in later JREs which would make your code fail at runtime with a linkage error. To avoid this issue, you can either configure the compiler's boot classpath to match the target JRE or use the Animal Sniffer Maven Plugin to verify your code doesn't use unintended APIs. In the same way, setting the source option does not guarantee that your code actually compiles on a JDK with the specified version. To compile your code with a specific JDK version, different than the one used to launch Maven, refer to the Compile Using A Different JDK example.
+
+[Compiling Sources Using A Different JDK](https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html)
+
+
  ```sh
  cd HelloWorldJava
  mvn compile
